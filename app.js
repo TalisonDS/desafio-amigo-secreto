@@ -11,6 +11,7 @@ function adicionarAmigo() {
 
     amigos.push(nome);
     atualizarLista();
+    document.getElementById('amigo').value =''
 }
 
 function atualizarLista() {
@@ -28,3 +29,4 @@ function sortearAmigo() {
     let sorteado = amigos[indiceAleatorio]
     document.getElementById('resultado').innerHTML = `O amigo secreto sorteado é: ${sorteado}`
 }
+
