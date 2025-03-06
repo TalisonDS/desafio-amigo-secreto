@@ -22,3 +22,9 @@ function atualizarLista() {
         listaAtualizada.appendChild(itemLista);
     }
 }
+
+function sortearAmigo() {
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length)
+    let sorteado = amigos[indiceAleatorio]
+    document.getElementById('resultado').innerHTML = `O amigo secreto sorteado é: ${sorteado}`
+}
